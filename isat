@@ -1,0 +1,27 @@
+ Magwinya Magic Order Management System
+ Overview
+This is a C++ console application that helps Magwinya Magic manage customer orders. 
+It replaces the old spreadsheet system with parallel arrays to store order data.
+
+How it Works
+The program stores data in **parallel arrays** that can hold up to **50 orders** (`MAX_ORDERS = 50`).
+
+The four arrays are:
+1. `orderIDs` - stores the order ID (e.g. M001)
+2. `customerNames` - stores the name of the customer
+3. `qtyMagwinyas` - stores the number of Magwinyas ordered
+4. `totalCosts` - stores the total price for the order
+
+ Main Features
+10 Orders are pre-loaded** when the program starts
+Add New Order:** Users can add a new order. The system calculates the total cost automatically (Quantity x R8.50)
+Display All Orders:** Shows all orders in a neat table format
+Find Order by ID:** Uses linear search to find an order using its Order ID
+Calculate Revenue:** Adds all the total costs together to show total money made
+
+ How to Compile and Run
+Open a terminal in the folder where `main.cpp` is saved and type:
+
+bash
+g++ -o magwinya_orders main.cpp
+./magwinya_orders
